@@ -1,5 +1,11 @@
 :root {
   --border-radius: 12px;
+  --background-color: #0d0d0d;
+  --logo-color: #595959;
+  --important-text-color: #d9d0c7;
+  --button-color: #f2bf5e;
+  --paragraph-color: #595959;
+  --paper-color: #262626;
 }
 
 * {
@@ -11,5 +17,7 @@
 html,
 body {
   max-width: 100vw;
+  margin: 0px 120px;
   overflow-x: hidden;
+  background-color: var(--background-color);
 }
