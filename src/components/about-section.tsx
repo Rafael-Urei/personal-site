@@ -21,43 +21,42 @@ const Div = styled.section`
     justify-content: space-between;
     height: 100%;
     width: 520px;
-  }
 
-  > div > h2 {
-    font-size: 13px;
-    font-weight: 600;
-  }
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+    }
 
-  > div > h1 {
-    font-size: 36px;
-    letter-spacing: 10px;
-    font-weight: 700;
-    text-align: center;
-    color: var(--important-text-color);
-  }
+    h1 {
+      font-size: 36px;
+      letter-spacing: 10px;
+      font-weight: 700;
+      text-align: center;
+      color: var(--important-text-color);
 
-  > div > h1 > span {
-    position: relative;
-  }
+      span {
+        position: relative;
+      }
 
-  > div > h1 > span::before {
-    content: "";
-    height: 4px;
-    width: 100%;
-    background-color: #75acff;
-    position: absolute;
-    bottom: 0px;
-    border-radius: 8px;
-  }
-
-  > div > p {
-    font-size: 12px;
-    color: var(--paragraph-color);
-    font-weight: 500;
+      span::before {
+        content: "";
+        height: 4px;
+        width: 100%;
+        background-color: #75acff;
+        position: absolute;
+        bottom: 0px;
+        border-radius: 8px;
+      }
+    }
+    p {
+      font-size: 12px;
+      color: var(--paragraph-color);
+      font-weight: 500;
+    }
   }
 `;
 
-export function Sobre() {
+export function AboutSection() {
   return (
     <Div>
       <picture></picture>
