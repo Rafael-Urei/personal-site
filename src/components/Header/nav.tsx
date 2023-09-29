@@ -9,9 +9,14 @@ const TagNav = styled.ul`
 
   > li > a {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     color: var(--important-text-color);
+    transition: 300ms ease-in-out;
+
+    &:hover {
+      color: #fff;
+    }
   }
 `;
 
@@ -19,19 +24,19 @@ export function Nav() {
   return (
     <TagNav>
       <li>
-        <a href="#">Inicio</a>
+        <a href="#inicio">INÍCIO</a>
       </li>
       <li>
-        <a href="#">Sobre</a>
+        <a href="#sobre">SOBRE</a>
       </li>
       <li>
-        <a href="#">Skills</a>
+        <a href="#skills">SKILLS</a>
       </li>
       <li>
-        <a href="#">Projetos</a>
+        <a href="#projetos">PROJETOS</a>
       </li>
       <li>
-        <a href="#">Contatos</a>
+        <a href="#contatos">CONTATOS</a>
       </li>
     </TagNav>
   );

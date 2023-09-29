@@ -2,13 +2,17 @@
 
 import styled from "styled-components";
 import { Nav } from "./nav";
+import Link from "next/link";
+import { Gabriela, Saira_Stencil_One } from "next/font/google";
+
+const gabriela = Gabriela({ weight: "400", subsets: ["latin"] });
 
 const Tagheader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: var(--background-color);
-  padding: 25px 80px;
+  padding: 25px 280px;
   margin-bottom: 34px;
 `;
 
@@ -31,27 +35,51 @@ const Buttons = styled.div`
     justify-content: center;
     align-items: center;
     background-color: var(--button-color);
-    height: 24px;
+    height: 34px;
     width: 100px;
     padding: 5px 14px;
     border: none;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    color: #000000;
     text-align: center;
     cursor: pointer;
+    transition: 300ms ease-in-out;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      transition: 300ms ease-in-out;
+    }
+
+    &:hover {
+      background-color: #fff;
+      a {
+        color: var(--background-color);
+      }
+    }
   }
 `;
 
 export function Header() {
   return (
-    <Tagheader>
-      <Logo>Rafael</Logo>
+    <Tagheader id="inicio">
+      <Logo className={gabriela.className}>Rafael</Logo>
       <Nav></Nav>
       <Buttons>
-        <button type="button">Github</button>
-        <button type="button">Linkedin</button>
+        <button type="button">
+          <Link href="https://github.com/Rafael-Urei" target="_blank">
+            Github
+          </Link>
+        </button>
+        <button type="button">
+          <Link
+            href="https://www.linkedin.com/in/rafael-souza-390513275/"
+            target="_blank"
+          >
+            Linkedin
+          </Link>
+        </button>
       </Buttons>
     </Tagheader>
   );

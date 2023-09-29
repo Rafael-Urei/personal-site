@@ -1,6 +1,7 @@
 const projects = [
   {
     id: 1,
+    url: "https://github.com/Rafael-Urei/Firebase-TodoList",
     title: "Projeto de Login e To do List.",
     tools: "React, TypeScript, Firebase, TailwindCSS, React-Hook-Form e Zod.",
     img: { src: "/todolist.png", alt: "Projeto Todolist Dashboard" },
@@ -10,6 +11,7 @@ const projects = [
   },
   {
     id: 2,
+    url: "https://leafy-pie-6d5299.netlify.app/",
     title: "Projeto Login Firebase.",
     tools: "React, TypeScript, Firebase, TailwindCSS, React-Hook-Form e Zod.",
     img: { src: "/tailwind.png", alt: "Projeto Login Tela de Login" },
@@ -19,6 +21,7 @@ const projects = [
   },
   {
     id: 3,
+    url: "https://github.com/Rafael-Urei/DashBoard-Project-JSON-Server",
     title: "Projeto Sistema de Gerenciamento de Laboratório.",
     tools: "React, TypeScript, MaterialUI, React-Hook-Form e Zod, MySQL",
     img: {
@@ -31,6 +34,7 @@ const projects = [
   },
   {
     id: 4,
+    url: "https://super-caramel-7241f7.netlify.app/",
     title: "Projeto Interactive Card.",
     tools: "React, JavaScript, React-Hook-Form e Yup.",
     img: { src: "/cardts.png", alt: "Projeto Credit Card Form" },

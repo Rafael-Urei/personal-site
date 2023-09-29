@@ -11,7 +11,7 @@ const TagSection = styled.section`
   width: 100%;
   min-height: 300px;
   padding: 0px 40px;
-  padding-bottom: 70px;
+  line-height: 120%;
 
   > h1 {
     font-size: 14px;
@@ -53,7 +53,7 @@ const Item = styled.button`
 export function SkillsSection() {
   const { icons } = useIcons();
   return (
-    <TagSection>
+    <TagSection id="skills">
       <h1>Skills</h1>
       <Container>
         <h2>Soft Skills</h2>

@@ -1,7 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 170px;
+  margin: 0px 220px;
+  margin-bottom: 170px;
   align-items: center;
   min-height: 100vh;
   background-color: var(--background-color);

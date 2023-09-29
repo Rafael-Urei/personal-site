@@ -4,6 +4,7 @@ import { styled } from "styled-components";
 import arte1 from "../../public/arte1.jpg";
 import woman from "../../public/woman.jpg";
 import gwen from "../../public/gwen.jpg";
+import { ArtStationIcon } from "@/icons/artstation";
 
 const Section = styled.section`
   display: flex;
@@ -11,9 +12,8 @@ const Section = styled.section`
   width: 100%;
   padding: 0px 40px;
   gap: 40px;
-  padding-bottom: 70px;
 
-  ul {
+  article {
     display: flex;
     justify-content: space-between;
   }
@@ -39,22 +39,21 @@ const SubTitle = styled.h2`
 const Paper = styled.article`
   min-width: 200px;
   width: 300px;
-  height: 130px;
+  height: 230px;
   border-radius: 8px;
   background-color: var(--paper-color);
   position: relative;
   cursor: pointer;
-  transition: 200ms;
+  transition: 300ms ease-in-out;
 
   &:hover {
     width: 600px;
-    height: 230px;
   }
 `;
 
 export function ArtsSection() {
   return (
-    <Section>
+    <Section id="artes">
       <Title>Artes</Title>
       <div>
         <SubTitle>
@@ -64,17 +63,17 @@ export function ArtsSection() {
             rel="external"
             title="Site do meu portfólio de arte"
           >
-            ArtStation
+            <ArtStationIcon />
           </Link>
         </SubTitle>
       </div>
-      <ul>
+      {/* <article>
         <Paper>
           <Image
             src={arte1}
             alt="Arte do Lanspre, um bebê Grifo olhando sua mãe voar em um campo aberto cheio de grama e algumas montanhas ao fundo."
             fill
-            style={{ objectFit: "cover", borderRadius: "8px" }}
+            style={{ objectFit: "contain", borderRadius: "8px" }}
           ></Image>
         </Paper>
         <Paper>
@@ -82,7 +81,7 @@ export function ArtsSection() {
             src={woman}
             alt="Estatua de pedra representando o rosto de uma mulher, em um fundo escuro"
             fill
-            style={{ objectFit: "cover", borderRadius: "8px" }}
+            style={{ objectFit: "contain", borderRadius: "8px" }}
           ></Image>
         </Paper>
         <Paper>
@@ -91,12 +90,12 @@ export function ArtsSection() {
             alt="Arte da Gwen Stacy, Mulher Aranha do universo de Miles Morales"
             fill
             style={{
-              objectFit: "cover",
+              objectFit: "contain",
               borderRadius: "8px",
             }}
           ></Image>
         </Paper>
-      </ul>
+      </article> */}
     </Section>
   );
 }
