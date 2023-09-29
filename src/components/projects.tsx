@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { styled } from "styled-components";
 import projects from "@/db";
 
@@ -30,6 +31,7 @@ const Paper = styled.div`
     height: 220px;
     background-color: var(--paper-color);
     border-radius: 8px;
+    position: relative;
   }
 
   div {
@@ -62,6 +64,7 @@ const InvertedPaper = styled.div`
     height: 220px;
     background-color: var(--paper-color);
     border-radius: 8px;
+    position: relative;
   }
 
   div {
@@ -89,7 +92,14 @@ export function Projects() {
         if (project.inverted) {
           return (
             <InvertedPaper key={project.id}>
-              <picture></picture>
+              <picture>
+                <Image
+                  src={project.img.src}
+                  alt={project.img.alt}
+                  fill
+                  style={{ objectFit: "cover", borderRadius: "8px" }}
+                />
+              </picture>
               <div>
                 <h2>{project.title}</h2>
                 <p>
@@ -103,7 +113,14 @@ export function Projects() {
         } else {
           return (
             <Paper key={project.id}>
-              <picture></picture>
+              <picture>
+                <Image
+                  src={project.img.src}
+                  alt={project.img.alt}
+                  fill
+                  style={{ objectFit: "cover", borderRadius: "8px" }}
+                />
+              </picture>
               <div>
                 <h2>{project.title}</h2>
                 <p>

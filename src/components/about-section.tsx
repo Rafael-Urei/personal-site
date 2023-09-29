@@ -47,6 +47,10 @@ const Div = styled.section`
         bottom: 0px;
         border-radius: 8px;
       }
+
+      span ~ span::before {
+        background-color: #13c557;
+      }
     }
     p {
       font-size: 12px;
