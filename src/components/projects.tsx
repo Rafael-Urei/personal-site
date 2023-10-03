@@ -57,6 +57,18 @@ const Paper = styled.div`
     font-weight: 700;
     color: var(--important-text-color);
   }
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+
+    picture {
+      width: 350px;
+    }
+
+    div {
+      width: auto;
+    }
+  }
 `;
 
 const InvertedPaper = styled.div`
@@ -97,6 +109,18 @@ const InvertedPaper = styled.div`
     font-size: 14px;
     font-weight: 700;
     color: var(--important-text-color);
+  }
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+
+    picture {
+      width: 350px;
+    }
+
+    div {
+      width: auto;
+    }
   }
 `;
 

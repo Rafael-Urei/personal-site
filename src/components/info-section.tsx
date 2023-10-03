@@ -8,6 +8,11 @@ const TagDiv = styled.div`
   font-size: 14px;
   font-weight: 700;
   color: var(--important-text-color);
+
+  @media (max-width: 1300px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export function Info() {

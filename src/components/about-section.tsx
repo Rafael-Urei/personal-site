@@ -72,6 +72,29 @@ const Div = styled.section`
       }
     }
   }
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    gap: 50px;
+
+    picture {
+      height: 100%;
+      width: 100%;
+    }
+
+    > div {
+      height: auto;
+      width: auto;
+      padding: 0px 10px;
+      gap: 10px;
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
 `;
 
 export function AboutSection() {

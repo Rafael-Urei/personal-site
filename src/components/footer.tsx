@@ -13,6 +13,15 @@ const TagFooter = styled.footer`
   width: 100%;
   background-color: #0d0625;
   padding: 35px 0px;
+
+  @media (max-width: 1300px) {
+    height: 200px;
+    padding: 0%;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const Container = styled.div`

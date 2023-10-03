@@ -42,6 +42,12 @@ const Container = styled.div`
     justify-content: center;
     gap: 50px;
   }
+
+  @media (max-width: 1300px) {
+    div {
+      flex-direction: column;
+    }
+  }
 `;
 
 const Item = styled.button`
