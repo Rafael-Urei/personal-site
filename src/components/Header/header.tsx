@@ -3,9 +3,7 @@
 import styled from "styled-components";
 import { Nav } from "./nav";
 import Link from "next/link";
-import { Gabriela, Saira_Stencil_One } from "next/font/google";
-import { MenuIcon } from "lucide-react";
-import { useSideMenu } from "@/contexts/side-menu-context";
+import { Gabriela } from "next/font/google";
 
 const gabriela = Gabriela({ weight: "400", subsets: ["latin"] });
 
