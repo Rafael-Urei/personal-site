@@ -1,9 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import { styled } from "styled-components";
-import arte1 from "../../public/arte1.jpg";
-import woman from "../../public/woman.jpg";
-import gwen from "../../public/gwen.jpg";
 import { ArtStationIcon } from "@/icons/artstation";
 
 const Section = styled.section`
