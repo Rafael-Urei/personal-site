@@ -9,20 +9,16 @@ import { Footer } from "@/components/footer";
 import { Info } from "@/components/info-section";
 import { Divider } from "@/components/divider";
 import { DownMenu } from "@/components/down-menu";
-import {
-  Contact,
-  FileSearch,
-  FolderGit2,
-  HomeIcon,
-  Instagram,
-  Linkedin,
-  MenuIcon,
-  Puzzle,
-} from "lucide-react";
+import { Github, HomeIcon, Linkedin, MenuIcon } from "lucide-react";
+import Link from "next/link";
+import { SideMenu } from "@/components/side-menu";
+import { useSideMenu } from "@/contexts/side-menu-context";
 
 export default function Home() {
+  const { toggleSideMenu } = useSideMenu();
   return (
     <>
+      <SideMenu />
       <main className={styles.main}>
         <AboutSection />
         <Divider />
@@ -38,20 +34,35 @@ export default function Home() {
       <Footer></Footer>
       <DownMenu>
         <div>
-          <button type="button">
-            <Instagram />
+          <button type="button" onClick={toggleSideMenu}>
+            <MenuIcon />
           </button>
-          <p>Instagram</p>
+          <p>Menu</p>
         </div>
         <div>
           <button type="button">
-            <HomeIcon />
+            <Link href="https://github.com/Rafael-Urei" target="_blank">
+              <Github />
+            </Link>
+          </button>
+          <p>GitHub</p>
+        </div>
+        <div>
+          <button type="button">
+            <Link href="#inicio">
+              <HomeIcon />
+            </Link>
           </button>
           <p>Início</p>
         </div>
         <div>
           <button type="button">
-            <Linkedin />
+            <Link
+              href="https://www.linkedin.com/in/rafael-souza-390513275/"
+              target="_blank"
+            >
+              <Linkedin />
+            </Link>
           </button>
           <p>Linkedin</p>
         </div>

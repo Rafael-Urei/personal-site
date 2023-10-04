@@ -18,6 +18,10 @@ const TagNav = styled.ul`
       color: #fff;
     }
   }
+
+  @media (max-width: 1300px) {
+    display: none;
+  }
 `;
 
 export function Nav() {

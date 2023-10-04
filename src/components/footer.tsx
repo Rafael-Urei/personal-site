@@ -21,6 +21,7 @@ const TagFooter = styled.footer`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 70px;
   }
 `;
 

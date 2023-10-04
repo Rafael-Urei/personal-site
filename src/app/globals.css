@@ -21,3 +21,15 @@ body {
   overflow-x: hidden;
   background-color: var(--background-color);
 }
+
+a {
+  text-decoration: none;
+}
+
+.open-menu {
+  width: 300px;
+}
+
+.close-menu {
+  width: 0px;
+}

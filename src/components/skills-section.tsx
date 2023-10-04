@@ -64,13 +64,9 @@ export function SkillsSection() {
       <Container>
         <h2>Soft Skills</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Sou uma pessoa resiliente, com princípios éticos, com inteligẽncia
+          emocional, flexível, empático, colaborativo, gosto de aprender mais e
+          mais, também sou positivo e relativamente criativo.
         </p>
       </Container>
       <Container>
@@ -83,6 +79,8 @@ export function SkillsSection() {
               </Item>
             );
           })}
+          <p>Inglês: Avançado</p>
+          <p>Russo: Básico</p>
         </div>
       </Container>
     </TagSection>

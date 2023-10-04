@@ -1,6 +1,7 @@
 "use client";
 
 import { styled } from "styled-components";
+import Image from "next/image";
 
 const Div = styled.section`
   display: flex;
@@ -9,6 +10,7 @@ const Div = styled.section`
   width: 100%;
 
   > picture {
+    position: relative;
     display: flex;
     flex: 1;
     background-color: var(--paper-color);
@@ -23,6 +25,7 @@ const Div = styled.section`
     width: 520px;
 
     h2 {
+      color: var(--important-text-color);
       font-size: 13px;
       font-weight: 600;
     }
@@ -88,7 +91,7 @@ const Div = styled.section`
       height: auto;
       width: auto;
       padding: 0px 10px;
-      gap: 10px;
+      gap: 20px;
 
       h1 {
         font-size: 30px;
@@ -108,13 +111,12 @@ export function AboutSection() {
           <p>or a Sith...</p>
         </h1>
         <p>
-          <span>&#60;p&#62;</span> Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <span>&#60;p&#62;</span> Olá, me chamo Rafael, sou estudante
+          autodidata de programação, ingressei nos estudos no ano de 2021.
+          Atualmente estou cursando Ciência da Computação. Meu objetivo é me
+          tornar um desenvolvedor WEB profissional. Gosto de aprender coisas
+          novas, nas horas vagas, gosto de fazer artes 2D e 3D, jogar e ouvir
+          música.
           <span>&#60;/p&#62;</span>
         </p>
       </div>

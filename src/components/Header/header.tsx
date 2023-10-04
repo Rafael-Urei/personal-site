@@ -5,6 +5,7 @@ import { Nav } from "./nav";
 import Link from "next/link";
 import { Gabriela, Saira_Stencil_One } from "next/font/google";
 import { MenuIcon } from "lucide-react";
+import { useSideMenu } from "@/contexts/side-menu-context";
 
 const gabriela = Gabriela({ weight: "400", subsets: ["latin"] });
 
@@ -17,13 +18,9 @@ const Tagheader = styled.header`
   margin-bottom: 34px;
 
   @media (max-width: 1300px) {
-    padding: 30px 20px;
+    justify-content: center;
+    padding: 20px 20px;
     margin: 0;
-
-    a,
-    div {
-      display: none;
-    }
   }
 `;
 
@@ -40,6 +37,10 @@ const Buttons = styled.div`
   width: 150px;
   display: flex;
   gap: 24px;
+
+  @media (max-width: 1300px) {
+    display: none;
+  }
 
   > button {
     display: flex;
@@ -72,23 +73,9 @@ const Buttons = styled.div`
   }
 `;
 
-const Menu = styled.button`
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: aliceblue;
-  border: none;
-  outline: none;
-  position: absolute;
-`;
-
 export function Header() {
   return (
     <Tagheader id="inicio">
-      <Menu>
-        <MenuIcon />
-      </Menu>
       <Logo className={gabriela.className}>Rafael</Logo>
       <Nav></Nav>
       <Buttons>
